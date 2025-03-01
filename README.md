@@ -10,3 +10,7 @@ Un temporizador Pomodoro simple hecho en Python para mejorar la concentración m
 2. Ingresa el tiempo de trabajo, descanso y la cantidad de ciclos.
 3. ¡Concentrate y mejora tu productividad!  🚀
 
+## 🛠️  Tecnologias Usadas.
+- Python
+- time (para controlar el temporazador)
+- winsound (para la alerta de finalización en Windows)
