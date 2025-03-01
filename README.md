@@ -6,7 +6,6 @@ Un temporizador Pomodoro simple hecho en Python para mejorar la concentración m
 1. Ejecuta el script en Python:
    ```python
    python Pomodoro.py
-   
 2. Ingresa el tiempo de trabajo, descanso y la cantidad de ciclos.
 3. ¡Concentrate y mejora tu productividad!  🚀
 
