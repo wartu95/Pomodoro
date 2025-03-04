@@ -23,8 +23,11 @@ def cuenta_atras(segundo):
     sonido()
 
 #   Función para reproducir un sonido al finalizar el temporizador
-def sonido():
-    winsound.Beep(1000, 500)
+def sonido(archivo_sonido="sonido/game-bonus.wav"):
+    try:
+        winsound.PlaySound(archivo_sonido, winsound.SND_FILENAME)
+    except Exception as e:
+        print(f" 🚧 Error a reproducir sonido: {e} ")
 
 #   Bloque principal del programa
 if __name__ == "__main__":
