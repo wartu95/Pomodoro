@@ -6,8 +6,12 @@ def pomodoro(tiempo_trabajo, tiempo_descanso, num_ciclos):
     for ciclo in range(1, num_ciclos + 1):
         print(f"\n 🟢   Ciclo {ciclo}: Tiempo de trabajo ({tiempo_trabajo} minutos)")
         cuenta_atras(tiempo_trabajo * 60)
-        print("\n ⏸️   Descanso corto")
+
+        print("\n ✔️  ¡Trabajo completado! Hora de descansar. 🎉")
+        sonido("sonido/game-bonus.wav")
         cuenta_atras(tiempo_descanso * 60)
+        print("\n 🔔  Descanso terminado. ¡De vuelta al trabajo! 🚀")
+        sonido("sonido/Air-Horn-.wav")
 
     print("\n  🎉  ¡Pomodoro completado! ¡Bien hecho Campeón lo hiciste!  🎉👨‍💻")
 
@@ -20,7 +24,7 @@ def cuenta_atras(segundo):
         time.sleep(1)
         segundo -= 1
     print("\r⌛  00:00")
-    sonido()
+    
 
 #   Función para reproducir un sonido al finalizar el temporizador
 def sonido(archivo_sonido="sonido/game-bonus.wav"):
